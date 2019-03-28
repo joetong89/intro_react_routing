@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid from 'uuid';
 
 class NewFreeAgentForm extends React.Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class NewFreeAgentForm extends React.Component {
         e.preventDefault();
 
         const player = {
+            id: uuid(),
             name: e.target.elements.yourName.value.trim(),
             gender: e.target.elements.yourGender.value.trim(),
             message: e.target.elements.yourMessage.value.trim()

@@ -114,7 +114,6 @@ class FreeAgentTracker extends React.Component {
     render() {
         return (
             <div>
-                <Header>Free Agent Tracker</Header>
                 <Body 
                     handleAddPlayer={this.handleAddPlayer}
                     handleShowPlayer={this.handleShowPlayer}

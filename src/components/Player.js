@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Player extends React.Component {
     constructor(props) {
@@ -26,7 +27,7 @@ class Player extends React.Component {
         return (
             <div className="player">
                 <div className="player-info">
-                    <p onClick={this.showPlayerModal}>{this.props.player.name} ({this.props.player.gender})</p>
+                    <Link to={"/profile/"+this.props.player.id}>{this.props.player.name} ({this.props.player.gender})</Link>
 
                     <button 
                         onClick={this.deletePlayer}
